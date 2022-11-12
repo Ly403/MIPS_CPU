@@ -1,0 +1,30 @@
+# do {sccpu_pre_tb_compile.do} 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module divide_clk
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module inst_rom
+# -- Compiling module _openmips
+# -- Compiling module data_ram
+# -- Compiling module sccomp_dataflow_pre
+# -- Compiling module sccpu_pre_tb
+# 
+# Top level modules:
+# 	sccpu_pre_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
