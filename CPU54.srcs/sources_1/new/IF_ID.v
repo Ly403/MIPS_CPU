@@ -20,7 +20,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 //`include "defines.v"
-`include "D:/digital_logic/project/CPU54/CPU54.srcs/sources_1/new/defines.v"
+`include "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v"
 //暂存指令数据，等待译码
 module IF_ID(
     input clk,

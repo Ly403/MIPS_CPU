@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 //`include "defines.v"
-`include "D:/digital_logic/project/CPU54/CPU54.srcs/sources_1/new/defines.v"
+`include "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v"
 //等一个时钟周期后，将源操作数、运算类型、写控制信号、写地址等信息传递到EX模块
 module ID_EX(
     input rst,

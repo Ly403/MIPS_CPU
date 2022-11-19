@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 //`include "defines.v"
-`include "D:/digital_logic/project/CPU54/CPU54.srcs/sources_1/new/defines.v"
+`include "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v"
 //指令存储器
 module inst_rom(
     input ce,
@@ -30,7 +30,7 @@ module inst_rom(
     reg [`__inst__data__bus__] inst_mem [0:`__inst__memory__num__ - 1];
 
     initial begin 
-        $readmemh ("D:/digital_logic/project/CPU54/CPU54.srcs/sources_1/new/inst_rom.data",inst_mem);
+        $readmemh ("D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.data",inst_mem);
     end
     //当复位信号无效，依据输入地址，给出指定存储器中ROM对应的元素
     always @(*) begin

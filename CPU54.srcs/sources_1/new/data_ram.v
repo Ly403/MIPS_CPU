@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 //`include "defines.v"
-`include "D:/digital_logic/project/CPU54/CPU54.srcs/sources_1/new/defines.v"
+`include "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v"
 //Êý¾Ý´æ´¢Æ÷
 module data_ram(
     input clk,

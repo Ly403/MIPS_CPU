@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Nov 19 14:07:17 2022
+# Process ID: 10844
+# Current directory: D:/desktop/CPU/MIPS_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28572 D:\desktop\CPU\MIPS_CPU\CPU54.xpr
+# Log file: D:/desktop/CPU/MIPS_CPU/vivado.log
+# Journal file: D:/desktop/CPU/MIPS_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/desktop/CPU/MIPS_CPU/CPU54.xpr
+update_compile_order -fileset sources_1

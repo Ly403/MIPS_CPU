@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-`include "D:/digital_logic/project/CPU54/CPU54.srcs/sources_1/new/defines.v"
+`include "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v"
 
 module openmips_min_sopc(
     input wire clk,

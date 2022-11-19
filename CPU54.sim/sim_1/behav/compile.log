@@ -1,7 +1,6 @@
-# do {sccpu_pre_tb_compile.do} 
+# do {openmips_min_sopc_tb_compile.do} 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module divide_clk
 # -- Compiling module regfile
 # -- Compiling module PC
 # -- Compiling module MEM_WB
@@ -15,14 +14,14 @@
 # -- Compiling module DIV
 # -- Compiling module CTRL
 # -- Compiling module CP0
+# -- Compiling module openmips
 # -- Compiling module inst_rom
-# -- Compiling module _openmips
 # -- Compiling module data_ram
-# -- Compiling module sccomp_dataflow_pre
-# -- Compiling module sccpu_pre_tb
+# -- Compiling module openmips_min_sopc
+# -- Compiling module openmips_min_sopc_tb
 # 
 # Top level modules:
-# 	sccpu_pre_tb
+# 	openmips_min_sopc_tb
 # Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module glbl
 # 

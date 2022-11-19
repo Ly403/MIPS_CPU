@@ -1,6 +1,6 @@
 @echo off
 set bin_path=D:\\digital_logic\\modelsim_10.4c\\_modelsim\\win32
-call %bin_path%/vsim   -do "do {sccpu_pre_tb_simulate.do}" -l simulate.log
+call %bin_path%/vsim   -do "do {openmips_min_sopc_tb_simulate.do}" -l simulate.log
 if "%errorlevel%"=="1" goto END
 if "%errorlevel%"=="0" goto SUCCESS
 :END

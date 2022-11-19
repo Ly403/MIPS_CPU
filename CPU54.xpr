@@ -3,14 +3,14 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="D:/digital_logic/project/CPU54/CPU54.xpr">
+<Project Version="7" Minor="14" Path="D:/desktop/MIPS_CPU/CPU54.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ef5bc07a20ba4954b63e8bfcbf9795b4"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
-    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDir" Val="$PPRDIR/../../digital_logic/modelsim_10.4c/_modelsim/vivado_lib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirModelSim" Val="D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
     <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
     <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
@@ -25,8 +25,8 @@
     <Option Name="IPUserFilesDir" Val="$PPRDIR/CPU54.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/CPU54.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="172"/>
-    <Option Name="WTModelSimLaunchSim" Val="136"/>
+    <Option Name="WTXSimLaunchSim" Val="177"/>
+    <Option Name="WTModelSimLaunchSim" Val="139"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
@@ -44,13 +44,6 @@
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/defines.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/divide_clk.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -148,21 +141,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/seg7x16.v">
+      <File Path="$PSRCDIR/sources_1/new/openmips.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/PIL.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/CPU54.v">
+      <File Path="$PSRCDIR/sources_1/new/inst_rom.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -176,74 +162,25 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/cpu.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/sccpu.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/inst_rom.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/openmips.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/openmips_min_sopc.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="c:/Users/86183/Desktop/mips_54_mars_simulate_student_ForWeb.coe">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/sccomp_dataflow_pre.v">
+      <File Path="$PSRCDIR/sources_1/new/seg7x16.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="c:/Users/86183/Desktop/mips_54_mars_board_switch_student.coe">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="c:/Users/86183/Desktop/mips_54_mars_simulate_student.coe">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="cpu"/>
+        <Option Name="TopModule" Val="openmips_min_sopc"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="VerilogDir" Val="$PPRDIR/."/>
         <Option Name="UpperCase" Val="1"/>
       </Config>
@@ -263,32 +200,8 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/new/sccpu_tb.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/sccpu_pre_tb.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/cpu_tb.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sim_1/new/openmips_min_sopc_tb.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -296,11 +209,11 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="sccpu_tb"/>
+        <Option Name="TopModule" Val="openmips_min_sopc_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
-        <Option Name="SimMode" Val="post-synthesis"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="xsim.simulate.runtime" Val="10000ns"/>
         <Option Name="modelsim.simulate.runtime" Val="10000ns"/>
@@ -316,26 +229,11 @@
       </File>
       <File Path="$PSRCDIR/sources_1/ip/imem/imem.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem_stub.v"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="c:/Users/86183/Desktop/mips_54_mars_board_switch_student.coe"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem.xml"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="synth/imem.vhd"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem.vho"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="doc/dist_mem_gen_v8_0_changelog.txt"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem.veo"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="imem.mif"/>
-        <CompFileExtendedInfo CompFileName="imem.xci" FileRelPathName="sim/imem.v"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="imem"/>
@@ -379,9 +277,7 @@
     </Run>
     <Run Id="imem_synth_1" Type="Ft3:Synth" SrcSet="imem" Part="xc7a100tcsg324-1" ConstrsSet="imem" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/imem_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -403,9 +299,7 @@
     </Run>
     <Run Id="imem_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="imem" Description="Default settings for Implementation." SynthRun="imem_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
