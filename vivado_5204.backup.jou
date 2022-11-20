@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Nov 19 14:13:22 2022
+# Process ID: 5204
+# Current directory: D:/desktop/MIPS_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8000 D:\desktop\MIPS_CPU\CPU54.xpr
+# Log file: D:/desktop/MIPS_CPU/vivado.log
+# Journal file: D:/desktop/MIPS_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/desktop/MIPS_CPU/CPU54.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/cpu.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/cpu.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v
+remove_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/sccomp_dataflow_pre.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/sccomp_dataflow_pre.v
+remove_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/sccpu.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/sccpu.v
+remove_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CPU54.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CPU54.v
+remove_files c:/Users/86183/Desktop/mips_54_mars_board_switch_student.coe
+remove_files c:/Users/86183/Desktop/mips_54_mars_simulate_student.coe
+remove_files c:/Users/86183/Desktop/mips_54_mars_simulate_student_ForWeb.coe
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/divide_clk.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/divide_clk.v
+add_files -norecurse D:/digital_logic/project/CPU54/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files -fileset sim_1 D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/cpu_tb.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/cpu_tb.v
+remove_files -fileset sim_1 D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/sccpu_tb.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/sccpu_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+remove_files D:/digital_logic/project/CPU54/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+remove_files -fileset sim_1 D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/sccpu_pre_tb.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/sccpu_pre_tb.v
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+set_property target_simulator XSim [current_project]
+launch_simulation
+source openmips_min_sopc_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source openmips_min_sopc_tb.tcl
+add_wave {{/openmips_min_sopc_tb/uut}} 
+add_wave {{/openmips_min_sopc_tb/uut/sccpu}} 
+restart
+run all
+close_sim
+launch_simulation
+source openmips_min_sopc_tb.tcl
+add_wave {{/openmips_min_sopc_tb/uut}} 
+restart
+run 1000 ns
+close_sim
+launch_simulation
+launch_simulation
+source openmips_min_sopc_tb.tcl
+set_property target_simulator ModelSim [current_project]
+close_sim
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+set_property compxlib.modelsim_compiled_library_dir D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib [current_project]
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32

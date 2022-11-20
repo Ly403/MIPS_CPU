@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/digital_logic/project/CPU54/CPU54.runs/synth_1'
+HD_PWD='D:/desktop/MIPS_CPU/CPU54.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log cpu.vds -m64 -mode batch -messageDb vivado.pb -notrace -source cpu.tcl
+EAStep vivado -log openmips_min_sopc_board.vds -m64 -mode batch -messageDb vivado.pb -notrace -source openmips_min_sopc_board.tcl

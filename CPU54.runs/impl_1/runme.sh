@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/digital_logic/project/CPU54/CPU54.runs/impl_1'
+HD_PWD='D:/desktop/MIPS_CPU/CPU54.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log cpu.vdi -applog -m64 -messageDb vivado.pb -mode batch -source cpu.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log openmips_min_sopc_board.vdi -applog -m64 -messageDb vivado.pb -mode batch -source openmips_min_sopc_board.tcl -notrace
 
 

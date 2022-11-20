@@ -56,11 +56,16 @@ module openmips_min_sopc(
         .timer_int(timer_int)
     );
     
-    inst_rom inst_rom0(
-        .ce(rom_ce),
-        .addr(inst_addr),
-        .inst(inst)
+    imem imem0(
+        .a(inst_addr[12:2]),
+        .spo(inst)
     );
+//    如要前仿真，放开下面的注释
+//    inst_rom inst_rom0(
+//        .ce(rom_ce),
+//        .addr(inst_addr),
+//        .inst(inst)
+//    );
     
     data_ram data_ram0(
         .clk(clk),
@@ -71,5 +76,5 @@ module openmips_min_sopc(
         .i_data(ram_data),
         .o_data(i_ram_data)    
     );
-
+    
 endmodule

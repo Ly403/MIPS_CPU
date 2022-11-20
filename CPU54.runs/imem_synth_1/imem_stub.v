@@ -1,9 +1,9 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-// Date        : Sat Aug 20 14:11:19 2022
+// Date        : Sun Nov 20 16:58:54 2022
 // Host        : LAPTOP-RHBK633D running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub D:/digital_logic/project/CPU54/CPU54.runs/imem_synth_1/imem_stub.v
+// Command     : write_verilog -force -mode synth_stub D:/desktop/MIPS_CPU/CPU54.runs/imem_synth_1/imem_stub.v
 // Design      : imem
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

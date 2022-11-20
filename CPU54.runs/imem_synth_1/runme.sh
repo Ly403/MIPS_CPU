@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/digital_logic/project/CPU54/CPU54.runs/imem_synth_1'
+HD_PWD='D:/desktop/MIPS_CPU/CPU54.runs/imem_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

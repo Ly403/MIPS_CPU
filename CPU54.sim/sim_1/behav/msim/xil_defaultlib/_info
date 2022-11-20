@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dD:\desktop\MIPS_CPU\CPU54.sim\sim_1\behav
 T_opt
-VoPY]df^a:Cag0c4Jk9KDO1
+V>lFkP;lXioSCfN_8h?LfR3
 04 20 4 work openmips_min_sopc_tb fast 0
 04 4 4 work glbl fast 0
-=1-5405db035ab0-63787ece-c7-7248
-o-quiet -auto_acc_if_foreign -work xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xil_defaultlib +acc
+=1-5405db035ab0-6379e517-2e4-7d84
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L dist_mem_gen_v8_0_10 -L xil_defaultlib +acc
 n@_opt
 OE;O;10.1c;51
 vCP0
@@ -22,9 +22,9 @@ L0 24
 Z3 OE;L;10.1c;51
 r1
 31
-Z4 !s108 1668841158.893000
-Z5 !s107 D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v|../../../CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v|../../../CPU54.srcs/sources_1/new/openmips_min_sopc.v|../../../CPU54.srcs/sources_1/new/data_ram.v|../../../CPU54.srcs/sources_1/new/inst_rom.v|../../../CPU54.srcs/sources_1/new/openmips.v|../../../CPU54.srcs/sources_1/new/CP0.v|../../../CPU54.srcs/sources_1/new/CTRL.v|../../../CPU54.srcs/sources_1/new/DIV.v|../../../CPU54.srcs/sources_1/new/EX.v|../../../CPU54.srcs/sources_1/new/EX_MEM.v|../../../CPU54.srcs/sources_1/new/HILO.v|../../../CPU54.srcs/sources_1/new/ID.v|../../../CPU54.srcs/sources_1/new/ID_EX.v|../../../CPU54.srcs/sources_1/new/IF_ID.v|../../../CPU54.srcs/sources_1/new/MEM.v|../../../CPU54.srcs/sources_1/new/MEM_WB.v|../../../CPU54.srcs/sources_1/new/pc.v|../../../CPU54.srcs/sources_1/new/regfile.v|
-Z6 !s90 -incr|-work|xil_defaultlib|+incdir+../../../|../../../CPU54.srcs/sources_1/new/regfile.v|../../../CPU54.srcs/sources_1/new/pc.v|../../../CPU54.srcs/sources_1/new/MEM_WB.v|../../../CPU54.srcs/sources_1/new/MEM.v|../../../CPU54.srcs/sources_1/new/IF_ID.v|../../../CPU54.srcs/sources_1/new/ID_EX.v|../../../CPU54.srcs/sources_1/new/ID.v|../../../CPU54.srcs/sources_1/new/HILO.v|../../../CPU54.srcs/sources_1/new/EX_MEM.v|../../../CPU54.srcs/sources_1/new/EX.v|../../../CPU54.srcs/sources_1/new/DIV.v|../../../CPU54.srcs/sources_1/new/CTRL.v|../../../CPU54.srcs/sources_1/new/CP0.v|../../../CPU54.srcs/sources_1/new/openmips.v|../../../CPU54.srcs/sources_1/new/inst_rom.v|../../../CPU54.srcs/sources_1/new/data_ram.v|../../../CPU54.srcs/sources_1/new/openmips_min_sopc.v|../../../CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v|
+Z4 !s108 1668932880.949000
+Z5 !s107 D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v|../../../CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v|../../../CPU54.srcs/sources_1/new/seg7x16.v|../../../CPU54.srcs/sources_1/new/openmips_min_sopc.v|../../../CPU54.srcs/sources_1/new/data_ram.v|../../../CPU54.srcs/sources_1/new/inst_rom.v|../../../CPU54.srcs/sources_1/new/openmips.v|../../../CPU54.srcs/sources_1/new/CP0.v|../../../CPU54.srcs/sources_1/new/CTRL.v|../../../CPU54.srcs/sources_1/new/DIV.v|../../../CPU54.srcs/sources_1/new/EX.v|../../../CPU54.srcs/sources_1/new/EX_MEM.v|../../../CPU54.srcs/sources_1/new/HILO.v|../../../CPU54.srcs/sources_1/new/ID.v|../../../CPU54.srcs/sources_1/new/ID_EX.v|../../../CPU54.srcs/sources_1/new/IF_ID.v|../../../CPU54.srcs/sources_1/new/MEM.v|../../../CPU54.srcs/sources_1/new/MEM_WB.v|../../../CPU54.srcs/sources_1/new/pc.v|../../../CPU54.srcs/sources_1/new/regfile.v|../../../CPU54.srcs/sources_1/new/defines.v|../../../CPU54.ip_user_files/ip/imem/sim/imem.v|
+Z6 !s90 -incr|-work|xil_defaultlib|+incdir+../../../|../../../CPU54.ip_user_files/ip/imem/sim/imem.v|../../../CPU54.srcs/sources_1/new/defines.v|../../../CPU54.srcs/sources_1/new/regfile.v|../../../CPU54.srcs/sources_1/new/pc.v|../../../CPU54.srcs/sources_1/new/MEM_WB.v|../../../CPU54.srcs/sources_1/new/MEM.v|../../../CPU54.srcs/sources_1/new/IF_ID.v|../../../CPU54.srcs/sources_1/new/ID_EX.v|../../../CPU54.srcs/sources_1/new/ID.v|../../../CPU54.srcs/sources_1/new/HILO.v|../../../CPU54.srcs/sources_1/new/EX_MEM.v|../../../CPU54.srcs/sources_1/new/EX.v|../../../CPU54.srcs/sources_1/new/DIV.v|../../../CPU54.srcs/sources_1/new/CTRL.v|../../../CPU54.srcs/sources_1/new/CP0.v|../../../CPU54.srcs/sources_1/new/openmips.v|../../../CPU54.srcs/sources_1/new/inst_rom.v|../../../CPU54.srcs/sources_1/new/data_ram.v|../../../CPU54.srcs/sources_1/new/openmips_min_sopc.v|../../../CPU54.srcs/sources_1/new/seg7x16.v|../../../CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v|
 Z7 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z8 !s92 -work xil_defaultlib +incdir+../../../ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 n@c@p0
@@ -32,10 +32,10 @@ n@c@p0
 !s100 hf_;1j>8E[SRc^zWOfnHz2
 !s85 0
 vCTRL
-I0P1z74RY3f7neNH5aNaU:0
+I4EziZD4O5EC6fbD4zNCP30
 VQeM7_9hiJZ_4QUW85Jh8?1
 R1
-R2
+w1668872656
 8../../../CPU54.srcs/sources_1/new/CTRL.v
 F../../../CPU54.srcs/sources_1/new/CTRL.v
 L0 23
@@ -49,7 +49,7 @@ R7
 R8
 n@c@t@r@l
 !i10b 1
-!s100 7b6i:lmz2WC4CUHf0IEzD2
+!s100 =O1]=_N<O:m:ZdF9fFBOW1
 !s85 0
 vdata_ram
 IF85I1>3GSYMPfgKG>QY0:1
@@ -145,7 +145,7 @@ R7
 !i10b 1
 !s100 c1=:[Hh_:X5jcHNWRn41V0
 !s85 0
-!s108 1668841159.116000
+!s108 1668932881.213000
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 vHILO
@@ -228,6 +228,25 @@ n@i@f_@i@d
 !i10b 1
 !s100 bAJVeAKmzXaJPGkcD<6<E0
 !s85 0
+vimem
+IL`67UGZHE6;R?2`0MTn^>3
+VM?meQPOmCS0zaU[nECLUh3
+R1
+w1668932878
+8../../../CPU54.ip_user_files/ip/imem/sim/imem.v
+F../../../CPU54.ip_user_files/ip/imem/sim/imem.v
+L0 56
+R3
+r1
+31
+R4
+R5
+R6
+R7
+R8
+!i10b 1
+!s100 [ng9X5`kdhjH86fG;o`820
+!s85 0
 vinst_rom
 I_MP>XU`Hn;FzcBF_neD?53
 Vdd?kfMiSGOL?c[K6=;BCO2
@@ -307,10 +326,10 @@ R8
 !s100 >X^zj:JO6afA7QZL84olU2
 !s85 0
 vopenmips_min_sopc
-IUIKL3ZK_253R^bJ>69@@12
+IG@7kJ^MZzCN2J2ECNc2do0
 V>oQnH]7^FROW0cG3a6B;63
 R1
-w1668838772
+w1668924307
 8../../../CPU54.srcs/sources_1/new/openmips_min_sopc.v
 F../../../CPU54.srcs/sources_1/new/openmips_min_sopc.v
 L0 23
@@ -323,7 +342,7 @@ R6
 R7
 R8
 !i10b 1
-!s100 3nYP><;MkQFWRQIk6DE:Q0
+!s100 eN;[jlYER>KE@=6gX3oB[3
 !s85 0
 vopenmips_min_sopc_tb
 IVmTe?SZYW>n[7Z@oRNP3S2
@@ -382,4 +401,23 @@ R7
 R8
 !i10b 1
 !s100 BVefmX^AiRI<zl>ZC>Ugk1
+!s85 0
+vseg7x16
+I4jMdI;a?F>f@nz_1@z1C=0
+VWo5oROXiziJk8HCRg:=Za0
+R1
+w1668837962
+8../../../CPU54.srcs/sources_1/new/seg7x16.v
+F../../../CPU54.srcs/sources_1/new/seg7x16.v
+L0 21
+R3
+r1
+31
+R4
+R5
+R6
+R7
+R8
+!i10b 1
+!s100 [A0ahPePZMC=`V23I?=BC3
 !s85 0

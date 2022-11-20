@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log cpu.vds -m64 -mode batch -messageDb vivado.pb -notrace -source cpu.tcl" );
+         "-log openmips_min_sopc_board.vds -m64 -mode batch -messageDb vivado.pb -notrace -source openmips_min_sopc_board.tcl" );
 
 
 
