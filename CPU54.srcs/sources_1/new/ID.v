@@ -29,6 +29,7 @@ module ID(
     input[`__inst__data__bus__] inst,
     
     input is_pipeline,
+    input is_delayslot, // 给定的代码是否满足延迟槽的约定
     //regfile两个读端口的输入
     input[`__regfile__data__bus__] reg_dataa,
     input[`__regfile__data__bus__] reg_datab,
@@ -92,10 +93,10 @@ module ID(
     */
     
     //此处，为了流水线CPU正常运作，卡了一个nop指令到延迟槽之中，等跳跃指令完成
-    wire [5:0] op1 = is_pipeline ? (is_in_dalay_slot == `InDelaySlot ? 6'b000000 :inst[31:26]) : inst[31:26];
-    wire [4:0] op2 = is_pipeline ? (is_in_dalay_slot == `InDelaySlot ? 5'b00000 :inst[10:6]) : inst[10:6];
-    wire [5:0] op3 = is_pipeline ? (is_in_dalay_slot == `InDelaySlot ? 6'b000000 :inst[5:0]) : inst[5:0];
-    wire [4:0] op4 = is_pipeline ? (is_in_dalay_slot == `InDelaySlot ? 5'b00000 :inst[20:16]) : inst[20:16];
+    wire [5:0] op1 = is_pipeline ? ((is_in_dalay_slot == `InDelaySlot && !is_delayslot) ? 6'b000000 :inst[31:26]) : inst[31:26];
+    wire [4:0] op2 = is_pipeline ? ((is_in_dalay_slot == `InDelaySlot && !is_delayslot)  ? 5'b00000 :inst[10:6]) : inst[10:6];
+    wire [5:0] op3 = is_pipeline ? ((is_in_dalay_slot == `InDelaySlot && !is_delayslot)  ? 6'b000000 :inst[5:0]) : inst[5:0];
+    wire [4:0] op4 = is_pipeline ? ((is_in_dalay_slot == `InDelaySlot && !is_delayslot)  ? 5'b00000 :inst[20:16]) : inst[20:16];
     
     //指令执行的立即数
     reg [`__regfile__data__bus__] imm;
@@ -766,6 +767,16 @@ module ID(
                     wd <= inst[20:16];
                     inst_valid <= `__instruction__valid__;
                 end
+                
+                `__ll__:begin
+                    wreg <= `WriteEnable;
+                    alu_op <= `__ll__op__;
+                    alu_sel <= `__res__load__store__;
+                    reg_reada <= 1'b1;
+                    reg_readb <= 1'b0;
+                    wd <= inst[20:16];
+                    inst_valid <= `__instruction__valid__;
+                end
 
                 `__lwl__:begin
                     wreg <= `WriteEnable;
@@ -831,7 +842,16 @@ module ID(
                     reg_readb <= 1'b1;
                     inst_valid <= `__instruction__valid__;
                 end
-
+                
+                `__sc__:begin
+                    wreg <= `WriteEnable; //不写寄存器
+                    alu_op <= `__sc__op__;
+                    alu_sel <= `__res__load__store__;
+                    reg_reada <= 1'b1;
+                    reg_readb <= 1'b1;
+                    inst_valid <= `__instruction__valid__;
+                end
+                
                 `__regimm__inst__:begin
                     case(op4)
                         `__bgez__:begin

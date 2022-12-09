@@ -54,6 +54,13 @@ module MEM(
     input wb_cp0_reg_we,
     input [4:0]wb_cp0_reg_waddr,
     input [`__regfile__data__bus__]wb_cp0_reg_data,
+    
+    //LLbit_i是LLbit寄存器的值
+    input wire                  LLbit_i,
+    //但不一定是最新值，回写阶段可能要写LLbit，所以还要进一步判断
+    input wire                  wb_LLbit_we_i,
+    input wire                  wb_LLbit_value_i,
+    
     //访存阶段的结果
     output reg [`__regfile__address__bus__] o_wd,
     output reg o_wreg,
@@ -76,7 +83,10 @@ module MEM(
     output reg [31:0] o_excepttype,
     output wire [`__regfile__data__bus__] o_cp0_epc,
     output wire o_is_in_dalay_slot,
-    output wire [`__regfile__data__bus__] o_current_inst_addr
+    output wire [`__regfile__data__bus__] o_current_inst_addr,
+    
+    output reg LLbit_we_o,
+    output reg LLbit_value_o
     );
 
     wire [`__regfile__data__bus__] zero32;
@@ -86,11 +96,25 @@ module MEM(
     reg [`__regfile__data__bus__] t_cp0_cause;
     reg [`__regfile__data__bus__] t_cp0_epc;
 
+    reg LLbit;
 
     assign zero32 = `zero;
 
     assign o_is_in_dalay_slot = is_in_dalay_slot;
     assign o_current_inst_addr = current_inst_addr;
+    
+      //获取最新的LLbit的值
+      always @ (*) begin
+          if(rst == `RstEnable) begin
+              LLbit <= 1'b0;
+          end else begin
+              if(wb_LLbit_we_i == 1'b1) begin
+                  LLbit <= wb_LLbit_value_i;
+              end else begin
+                  LLbit <= LLbit_i;
+              end
+          end
+      end
     
     always @(*) begin
         if(rst == `RstEnable)begin
@@ -279,6 +303,16 @@ module MEM(
                   end
                 endcase                  
             end
+		    
+		    `__ll__op__:		begin
+                o_mem_addr <= i_mem_addr;
+                mem_we <= `WriteDisable;
+                o_wdata <= i_mem_data;    
+                LLbit_we_o <= 1'b1;
+                LLbit_value_o <= 1'b1;
+                o_mem_sel <= 4'b1111;                    
+                o_mem_ce <= `__chip__enable__;            
+            end        
 
             `__sb__op__:begin
                 o_mem_addr <= i_mem_addr;
@@ -385,6 +419,21 @@ module MEM(
                   end
                 endcase
             end
+            
+            `__sc__op__:begin
+                if(LLbit == 1'b1) begin
+                    LLbit_we_o <= 1'b1;
+                    LLbit_value_o <= 1'b0;
+                    o_mem_addr <= i_mem_addr;
+                    mem_we <= `WriteEnable;
+                    o_mem_data <= i_regb;
+                    o_wdata <= 32'b1;
+                    o_mem_sel <= 4'b1111;        
+                    o_mem_ce <=  `__chip__enable__;             
+                end else begin
+                    o_wdata <= 32'b0;
+                end
+            end        
 
             default: begin
             end

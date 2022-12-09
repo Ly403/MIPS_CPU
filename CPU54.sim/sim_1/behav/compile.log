@@ -26,11 +26,13 @@
 # -- Compiling module data_ram
 # -- Compiling module openmips_min_sopc
 # -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
 # -- Compiling module openmips_min_sopc_tb
 # 
 # Top level modules:
-# 	imem
-# 	seg7x16
+# 	openmips_min_sopc_board
 # 	openmips_min_sopc_tb
 # Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module glbl

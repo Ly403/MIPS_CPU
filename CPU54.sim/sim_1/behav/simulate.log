@@ -13,9 +13,9 @@
 # 
 # ** Note: (vopt-143) Recognized 1 FSM in module "DIV(fast)".
 # 
-# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips.v(619): (vopt-2685) [TFMPC] - Too few port connections for 'CP0_0'.  Expected 20, found 19.
+# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips.v(649): (vopt-2685) [TFMPC] - Too few port connections for 'CP0_0'.  Expected 20, found 19.
 # 
-# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips.v(619): (vopt-2718) [TFMPC] - Missing connection for port 'o_badVAddr'.
+# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips.v(649): (vopt-2718) [TFMPC] - Missing connection for port 'o_badVAddr'.
 # 
 # Loading work.openmips_min_sopc_tb(fast)
 # Loading work.openmips_min_sopc(fast)
@@ -32,229 +32,20 @@
 # Loading work.HILO(fast)
 # Loading work.CTRL(fast)
 # Loading work.DIV(fast)
+# Loading work.LLbit(fast)
 # Loading work.CP0(fast)
 # Loading work.inst_rom(fast)
 # Loading work.data_ram(fast)
 # Loading work.glbl(fast)
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
-#           File in use by: 86183  Hostname: LAPTOP-RHBK633D  Prestart -f
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.PC(fast)
-# Loading work.IF_ID(fast)
-# Loading work.ID(fast)
-# Loading work.regfile(fast)
-# Loading work.ID_EX(fast)
-# Loading work.EX(fast)
-# Loading work.EX_MEM(fast)
-# Loading work.MEM(fast)
-# Loading work.MEM_WB(fast)
-# Loading work.HILO(fast)
-# Loading work.CTRL(fast)
-# Loading work.DIV(fast)
-# Loading work.CP0(fast)
-# Loading work.inst_rom(fast)
-# Loading work.data_ram(fast)
-# Loading work.glbl(fast)
-add wave -position insertpoint sim:/openmips_min_sopc_tb/uut/*
-add wave -position insertpoint sim:/openmips_min_sopc_tb/uut/sccpu/*
-add wave -position insertpoint sim:/openmips_min_sopc_tb/uut/inst_rom0/*
-add wave -position insertpoint sim:/openmips_min_sopc_tb/uut/data_ram0/*
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Causality operation skipped due to absense of debug database file
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: (vsim-31) Unable to unlink file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/msim/xil_defaultlib/_opt__lock".
+#           File in use by: 86183  Hostname: LAPTOP-RHBK633D  ProcessID: 10348
 # 
-# No such file or directory. (errno = ENOENT)
+#           Attempting to use alternate WLF file "./wlfts9v5gw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfts9v5gw
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

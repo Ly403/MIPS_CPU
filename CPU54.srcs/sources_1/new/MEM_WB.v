@@ -39,6 +39,10 @@ module MEM_WB(
 
     input [5:0] stall,
     input flush,
+    
+    input wire mem_LLbit_we,
+    input wire mem_LLbit_value,    
+    
     //WB模块的信息
     output reg[`__regfile__address__bus__] wb_wd,
     output reg wb_wreg,
@@ -50,7 +54,9 @@ module MEM_WB(
 
     output reg wb_cp0_reg_we,
     output reg [4:0]wb_cp0_reg_waddr,
-    output reg [`__regfile__data__bus__]wb_cp0_reg_data
+    output reg [`__regfile__data__bus__]wb_cp0_reg_data,
+    output reg wb_LLbit_we,
+    output reg wb_LLbit_value
     );
 
     always @(posedge clk) begin
@@ -64,6 +70,8 @@ module MEM_WB(
           wb_cp0_reg_we <= `WriteDisable;
           wb_cp0_reg_waddr <= 5'b00000;
           wb_cp0_reg_data <= `zero;
+          wb_LLbit_we <= 1'b0;
+          wb_LLbit_value <= 1'b0;    
         end 
         else if(flush == 1'b1)begin
           wb_wd <= `NOP;
@@ -75,6 +83,8 @@ module MEM_WB(
           wb_cp0_reg_we <= `WriteDisable;
           wb_cp0_reg_waddr <= 5'b00000;
           wb_cp0_reg_data <= `zero;                
+          wb_LLbit_we <= 1'b0;
+          wb_LLbit_value <= 1'b0;    
         end
         else if(stall[4] == `STOP && stall[5] == `UNSTOP)begin
           wb_wd <= `NOP;
@@ -86,6 +96,8 @@ module MEM_WB(
           wb_cp0_reg_we <= `WriteDisable;
           wb_cp0_reg_waddr <= 5'b00000;
           wb_cp0_reg_data <= `zero;          
+          wb_LLbit_we <= 1'b0;
+          wb_LLbit_value <= 1'b0;    
         end
         else if(stall[4] == `UNSTOP)begin
           wb_wd <= mem_wd;
@@ -97,6 +109,8 @@ module MEM_WB(
           wb_cp0_reg_we <= mem_cp0_reg_we;
           wb_cp0_reg_waddr <= mem_cp0_reg_waddr;
           wb_cp0_reg_data <= mem_cp0_reg_data;
+          wb_LLbit_we <= mem_LLbit_we;
+          wb_LLbit_value <= mem_LLbit_value;    
         end
     end
     

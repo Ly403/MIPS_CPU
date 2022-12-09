@@ -131,6 +131,8 @@ module openmips(
     wire [`__regfile__data__bus__] mem_lo_;
     wire mem_w_hilo_;
 
+    wire mem_LLbit_value_o;
+	wire mem_LLbit_we_o;
     //wire mem_LLbit_value_;
 	//wire mem_LLbit_we_;
 
@@ -150,6 +152,8 @@ module openmips(
     wire [`__regfile__data__bus__]_wb_lo;
     wire _wb_w_hilo;
 
+	wire wb_LLbit_value_i;
+	wire wb_LLbit_we_i;	
     //wire wb_LLbit_value_i;
 	//wire wb_LLbit_we_i;	
 
@@ -197,6 +201,7 @@ module openmips(
     wire stall_req_from_id;
     wire stall_req_from_ex;
 
+    wire LLbit_o;
     //wire LLbit_o;
 
     
@@ -244,6 +249,7 @@ module openmips(
 
     ID id0(
         .is_pipeline(1'b1),
+        .is_delayslot(1'b0),
         .rst(rst),
         .pc(_id_pc),
         .inst(_id_inst),
@@ -491,6 +497,10 @@ module openmips(
         .cp0_cause(cp0_cause),
         .cp0_epc(cp0_epc),
 
+		.LLbit_i(LLbit_o),
+		.wb_LLbit_we_i(wb_LLbit_we_i),
+		.wb_LLbit_value_i(wb_LLbit_value_i),
+
         .wb_cp0_reg_data(_wb_cp0_reg_data),
         .wb_cp0_reg_we(_wb_cp0_reg_we),
         .wb_cp0_reg_waddr(_wb_cp0_reg_waddr),
@@ -517,7 +527,11 @@ module openmips(
         .o_cp0_epc(latest_epc),
         .o_excepttype(mem_excepttype_),
         .o_current_inst_addr(mem_current_inst_addr_),
-        .o_is_in_dalay_slot(mem_is_in_delayslot_)
+        .o_is_in_dalay_slot(mem_is_in_delayslot_),
+        
+        
+        .LLbit_we_o(mem_LLbit_we_o),
+        .LLbit_value_o(mem_LLbit_value_o)
     ); 
 
     MEM_WB MEM_WB0(
@@ -536,6 +550,10 @@ module openmips(
         .mem_cp0_reg_we(mem_cp0_reg_we_),
 		.mem_cp0_reg_waddr(mem_cp0_reg_waddr_),
 		.mem_cp0_reg_data(mem_cp0_reg_data_),		
+        
+        
+        .mem_LLbit_we(mem_LLbit_we_o),
+        .mem_LLbit_value(mem_LLbit_value_o),    
         //WB»ØÐ´
         .wb_wd(_wb_wd),
         .wb_wreg(_wb_wreg),
@@ -547,7 +565,10 @@ module openmips(
 
         .wb_cp0_reg_we(_wb_cp0_reg_we),
 		.wb_cp0_reg_waddr(_wb_cp0_reg_waddr),
-		.wb_cp0_reg_data(_wb_cp0_reg_data)	
+		.wb_cp0_reg_data(_wb_cp0_reg_data),
+		
+		.wb_LLbit_we(wb_LLbit_we_i),
+        .wb_LLbit_value(wb_LLbit_value_i)
     );
 
     HILO HILO0(
@@ -589,6 +610,15 @@ module openmips(
 	
 		.result(div_result),
 		.ready(div_ready)
+	);
+
+	LLbit LLbit0(
+		.clk(clk),
+		.rst(rst),
+	    .flush(flush),
+		.LLbit_i(wb_LLbit_value_i),
+		.we(wb_LLbit_we_i),
+		.LLbit_o(LLbit_o)
 	);
 
     CP0 CP0_0(
