@@ -1,8 +1,8 @@
 @echo off
-set xv_path=D:\\Vivado\\2016.2\\bin
-call %xv_path%/xsim openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch openmips_min_sopc_tb.tcl -log simulate.log
-if "%errorlevel%"=="0" goto SUCCESS
+set bin_path=D:\\digital_logic\\modelsim_10.4c\\_modelsim\\win32
+call %bin_path%/vsim   -do "do {openmips_min_sopc_post_tb_simulate.do}" -l simulate.log
 if "%errorlevel%"=="1" goto END
+if "%errorlevel%"=="0" goto SUCCESS
 :END
 exit 1
 :SUCCESS

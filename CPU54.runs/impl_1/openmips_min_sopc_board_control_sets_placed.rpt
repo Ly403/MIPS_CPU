@@ -1,0 +1,647 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Dec 17 22:00:26 2022
+| Host         : LAPTOP-RHBK633D running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file openmips_min_sopc_board_control_sets_placed.rpt
+| Design       : openmips_min_sopc_board
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   594 |
+| Unused register locations in slices containing registers |    89 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              99 |           46 |
+| No           | No                    | Yes                    |              57 |           22 |
+| No           | Yes                   | No                     |             302 |          133 |
+| Yes          | No                    | No                     |              56 |           24 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            2117 |          959 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+----------------------------------------------------+--------------------------------------+------------------+----------------+
+|            Clock Signal           |                    Enable Signal                   |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-----------------------------------+----------------------------------------------------+--------------------------------------+------------------+----------------+
+|                                   |                                                    | rst_IBUF                             |                1 |              1 |
+|  sccpu/EX_MEM0/wb_LLbit_value_reg |                                                    |                                      |                2 |              2 |
+|  sccpu/id_ex0/o_cnt_reg[1][0]     |                                                    | rst_IBUF                             |                1 |              2 |
+|  seg7x16_0/seg7_clk               |                                                    | rst_IBUF                             |                2 |              3 |
+|  clk_BUFG                         |                                                    |                                      |                4 |              4 |
+|  clk_BUFG                         | sccpu/EX_MEM0/o_cause_reg[2]_0[0]                  | rst_IBUF                             |                1 |              4 |
+|  clk_BUFG                         | sccpu/MEM_WB0/o_cause_reg[9][0]                    | rst_IBUF                             |                4 |              4 |
+|  sccpu/id_ex0/mem_wdata_reg[1][0] |                                                    |                                      |                2 |              5 |
+|  clk_BUFG                         | sccpu/DIV0/cnt[5]_i_1_n_6                          |                                      |                3 |              6 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_16          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_17          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_1           |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_10          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_14          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_12          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_11          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_18          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_19          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_21          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_22          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_23          |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_3           |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_5           |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_6           |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_8           |                                      |                2 |              8 |
+|  clk_BUFG                         | sccpu/id_ex0/dividend_reg[0]_0                     | sccpu/DIV0/dividend[31]_i_1_n_6      |                8 |             14 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_2           |                                      |                4 |             16 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_20          |                                      |                4 |             16 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_15          |                                      |                4 |             16 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[4]_9           |                                      |                4 |             16 |
+|  clk_BUFG                         | sccpu/id_ex0/dividend_reg[0]_0                     |                                      |                9 |             18 |
+|  clk_in_IBUF_BUFG                 |                                                    |                                      |               14 |             24 |
+|  clk_BUFG                         | sccpu/MEM_WB0/o_status_reg[2][0]                   | rst_IBUF                             |               13 |             31 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[21][31][0]             | rst_IBUF                             |               12 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[22][31][0]             | rst_IBUF                             |               10 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[23][31][0]             | rst_IBUF                             |               13 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[24][31][0]             | rst_IBUF                             |               19 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[25][31][0]             | rst_IBUF                             |               13 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[26][31][0]             | rst_IBUF                             |               11 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[27][31][0]             | rst_IBUF                             |               16 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[28][31][0]             | rst_IBUF                             |               16 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[29][31][0]             | rst_IBUF                             |               15 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[2][0][0]               | rst_IBUF                             |               12 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[30][31][0]             | rst_IBUF                             |               13 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[31][31][0]             | rst_IBUF                             |               21 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[3][0][0]               | rst_IBUF                             |               13 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[4][31][0]              | rst_IBUF                             |               15 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[5][31][0]              | rst_IBUF                             |               12 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[6][31][0]              | rst_IBUF                             |               17 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[7][31][0]              | rst_IBUF                             |               17 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[8][31][0]              | rst_IBUF                             |               23 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[9][31][0]              | rst_IBUF                             |                9 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/o_badVAddr_reg[31][0]                | rst_IBUF                             |               13 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/o_compare_reg[31][0]                 | rst_IBUF                             |               12 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/o_epc_reg[31]_0[0]                   | rst_IBUF                             |               15 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/pc_reg[0][0]                         | sccpu/pc0/p_0_in                     |               11 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]             |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_0           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_1           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_10          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_100         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_101         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_102         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_103         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_104         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_105         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_106         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_107         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_108         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_109         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_11          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_110         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_111         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_112         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_113         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_114         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_115         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_116         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_117         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_118         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_119         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_12          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_120         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_121         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_122         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_123         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_124         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_125         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_126         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_127         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_128         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_129         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_13          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_130         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_131         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_132         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_133         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_134         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_135         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_136         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_137         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_138         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_139         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_14          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_140         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_141         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_142         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_143         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_144         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_145         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_146         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_147         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_148         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_149         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_15          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_150         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_151         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_152         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_153         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_154         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_155         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_156         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_157         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_158         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_159         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_16          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_160         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_161         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_162         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_163         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_164         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_165         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_166         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_167         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_168         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_169         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_17          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_170         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_171         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_172         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_173         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_174         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_175         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_176         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_177         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_178         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_179         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_18          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_180         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_181         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_182         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_183         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_184         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_185         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_186         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_187         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_188         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_189         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_19          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_190         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_191         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_192         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_193         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_194         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_195         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_196         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_197         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_198         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_199         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_2           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_20          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_200         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_201         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_202         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_203         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_204         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_205         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_206         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_207         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_208         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_209         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_21          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_210         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_211         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_212         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_213         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_214         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_215         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_216         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_217         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_218         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_219         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_22          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_220         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_221         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_222         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_223         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_224         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_225         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_226         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_227         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_228         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_229         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_23          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_230         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_231         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_232         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_233         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_234         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_235         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_236         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_237         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_238         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_239         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_24          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_240         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_241         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_242         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_243         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_244         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_245         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_246         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_247         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_248         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_249         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_25          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_250         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_251         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_252         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_253         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_254         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_255         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_256         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_257         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_258         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_259         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_26          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_260         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_261         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_262         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_263         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_264         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_265         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_266         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_267         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_268         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_269         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_27          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_270         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_271         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_272         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_273         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_274         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_275         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_276         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_277         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_278         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_279         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_28          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_280         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_281         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_282         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_283         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_284         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_285         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_286         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_287         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_288         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_289         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_29          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_290         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_291         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_292         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_293         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_294         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_295         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_296         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_297         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_298         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_299         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_3           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_30          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_300         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_301         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_302         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_303         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_304         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_305         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_306         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_307         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_308         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_309         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_31          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_310         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_311         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_312         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_313         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_314         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_315         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_316         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_317         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_318         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_319         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_32          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_320         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_321         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_322         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_323         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_324         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_325         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_326         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_327         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_328         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_329         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_33          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_330         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_331         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_332         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_333         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_334         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_335         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_336         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_337         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_338         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_339         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_34          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_340         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_341         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_342         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_343         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_344         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_345         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_346         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_347         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_348         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_349         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_35          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_350         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_351         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_352         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_353         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_354         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_355         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_356         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_357         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_358         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_359         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_36          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_360         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_361         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_362         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_363         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_364         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_365         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_366         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_367         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_368         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_369         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_37          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_370         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_371         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_372         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_373         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_374         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_375         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_376         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_377         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_378         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_379         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_38          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_380         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_381         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_382         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_383         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_384         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_385         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_386         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_387         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_388         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_389         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_39          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_390         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_391         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_392         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_393         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_394         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_395         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_396         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_397         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_398         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_399         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_4           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_40          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_400         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_401         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_402         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_403         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_404         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_405         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_406         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_407         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_408         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_409         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_41          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_410         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_411         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_412         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_413         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_414         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_415         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_416         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_417         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_418         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_419         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_42          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_420         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_421         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_422         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_423         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_424         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_425         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_426         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_427         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_428         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_429         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_43          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_430         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_431         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_432         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_433         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_434         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_435         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_436         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_437         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_438         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_439         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_44          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_440         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_441         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_442         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_443         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_444         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_445         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_446         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_447         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_448         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_449         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_45          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_450         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_451         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_452         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_453         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_454         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_455         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_456         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_457         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_458         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_459         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_46          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_460         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_461         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_462         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_463         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_464         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_465         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_466         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_467         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_468         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_469         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_47          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_470         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_471         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_472         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_473         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_474         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_475         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_476         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_477         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_478         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_479         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_48          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_480         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_481         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_482         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_483         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_484         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_485         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_486         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_487         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_488         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_489         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_49          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_490         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_491         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_492         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_493         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_494         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_495         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_496         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_497         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_498         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_499         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_5           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_50          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_500         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_501         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_502         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_503         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_504         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_505         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_506         |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_51          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_52          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_53          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_54          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_55          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_56          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_57          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_58          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_59          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_6           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_60          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_61          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_62          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_63          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_64          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_65          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_66          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_67          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_68          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_69          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_7           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_70          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_71          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_72          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_73          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_74          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_75          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_76          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_77          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_78          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_79          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_8           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_80          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_81          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_82          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_83          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_84          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_85          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_86          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_87          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_88          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_89          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_9           |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_90          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_91          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_92          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_93          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_94          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_95          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_96          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_97          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_98          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/wb_wdata_reg[0]_99          |                                      |                8 |             32 |
+|  clk_BUFG                         | sccpu/DIV0/dividend[64]_i_2_n_6                    | sccpu/DIV0/dividend[64]_i_1_n_6      |                9 |             32 |
+|  clk_BUFG                         | sccpu/DIV0/divisor                                 |                                      |               12 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[10][31][0]             | rst_IBUF                             |               16 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[13][31][0]             | rst_IBUF                             |               14 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[11][31][0]             | rst_IBUF                             |               13 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[12][31][0]             | rst_IBUF                             |                9 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[14][31][0]             | rst_IBUF                             |               14 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[15][31][0]             | rst_IBUF                             |               11 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[16][0][0]              | rst_IBUF                             |               20 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[17][31][0]             | rst_IBUF                             |                9 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[18][31][0]             | rst_IBUF                             |                9 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[19][31][0]             | rst_IBUF                             |               12 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[1][0][0]               | rst_IBUF                             |               15 |             32 |
+|  clk_BUFG                         | sccpu/MEM_WB0/array_reg_reg[20][0][0]              | rst_IBUF                             |               10 |             32 |
+|  n_2_2532_BUFG                    |                                                    | rst_IBUF                             |               19 |             32 |
+|  n_3_4076_BUFG                    |                                                    | rst_IBUF                             |               13 |             32 |
+|  n_4_4234_BUFG                    |                                                    | rst_IBUF                             |               22 |             32 |
+|  n_5_8406_BUFG                    |                                                    | rst_IBUF                             |                9 |             32 |
+|  clk_BUFG                         |                                                    | rst_IBUF                             |               13 |             40 |
+|  clk_in_IBUF_BUFG                 |                                                    | rst_IBUF                             |               20 |             54 |
+|  n_1_7349_BUFG                    |                                                    |                                      |               24 |             64 |
+|  clk_BUFG                         | sccpu/MEM_WB0/o_hi_reg[31][0]                      | rst_IBUF                             |               40 |             64 |
+|  clk_BUFG                         | sccpu/EX0/id_inst_reg[0]                           | sccpu/MEM_WB0/SR[0]                  |               38 |             64 |
+|  clk_BUFG                         | sccpu/DIV0/result[63]_i_1_n_6                      | rst_IBUF                             |               29 |             65 |
+|  n_0_2585_BUFG                    |                                                    | rst_IBUF                             |               41 |             65 |
+|  clk_BUFG                         |                                                    | sccpu/MEM_WB0/o_cnt_reg[0][0]        |               14 |             66 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/E[0]                        | sccpu/MEM_WB0/wb_wd[4]_i_1_n_6       |               66 |            143 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/o_wishbone_addr[16]_i_1_n_6 | rst_IBUF                             |               78 |            155 |
+|  clk_BUFG                         | sccpu/EX0/id_inst_reg[0]                           | sccpu/MEM_WB0/ex_in_delay_slot_reg_0 |               69 |            169 |
+|  clk_BUFG                         | sccpu/dwishbone_bus_if/mem_wd_reg[4][0]            | sccpu/dwishbone_bus_if/SR[0]         |              124 |            252 |
++-----------------------------------+----------------------------------------------------+--------------------------------------+------------------+----------------+
+
+

@@ -1,8 +1,6 @@
 @echo off
-set xv_path=D:\\Vivado\\2016.2\\bin
-echo "xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
-call %xv_path%/xvlog  -m64 --relax -prj openmips_min_sopc_tb_vlog.prj -log xvlog.log
-call type xvlog.log > compile.log
+set bin_path=D:\\digital_logic\\modelsim_10.4c\\_modelsim\\win32
+call %bin_path%/vsim  -c -do "do {openmips_min_sopc_post_tb_compile.do}" -l compile.log
 if "%errorlevel%"=="1" goto END
 if "%errorlevel%"=="0" goto SUCCESS
 :END

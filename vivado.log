@@ -9,3 +9,2319 @@
 # Log file: D:/desktop/MIPS_CPU/vivado.log
 # Journal file: D:/desktop/MIPS_CPU\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project D:/desktop/MIPS_CPU/CPU54.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'.
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=9108)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=28064)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/wlft83zh9t
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=28440)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/wlft83zh9t
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=18092)
+set_property target_simulator XSim [current_project]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 14:01:09 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1011.145 ; gain = 64.531
+add_wave {{/openmips_min_sopc_tb/uut}} 
+add_wave {{/openmips_min_sopc_tb/uut/sccpu}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+run 10000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 14:05:30 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1077.996 ; gain = 0.000
+add_wave {{/openmips_min_sopc_tb/uut}} 
+add_wave {{/openmips_min_sopc_tb/uut/sccpu}} 
+add_wave {{/openmips_min_sopc_tb/uut/inst_rom0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/inst_rom0/inst_mem" to the wave window because it has 2097120 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+add_wave {{/openmips_min_sopc_tb/uut/data_ram0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem0" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem1" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem2" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem3" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+run 10000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 14:13:28 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1084.531 ; gain = 0.000
+add_wave {{/openmips_min_sopc_tb/uut}} 
+add_wave {{/openmips_min_sopc_tb/uut/sccpu}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 14:24:44 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1131.723 ; gain = 0.000
+add_wave {{/openmips_min_sopc_tb/uut}} 
+add_wave {{/openmips_min_sopc_tb/uut/sccpu}} 
+add_wave {{/openmips_min_sopc_tb/uut/data_ram0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem0" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem1" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem2" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem3" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+add_wave {{/openmips_min_sopc_tb/uut/inst_rom0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/inst_rom0/inst_mem" to the wave window because it has 2097120 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 15:08:10 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1180.168 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_wave {{/openmips_min_sopc_tb/uut}} 
+add_wave {{/openmips_min_sopc_tb/uut/sccpu}} 
+run 10000 ns
+add_wave {{/openmips_min_sopc_tb/uut/inst_rom0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/inst_rom0/inst_mem" to the wave window because it has 2097120 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+add_wave {{/openmips_min_sopc_tb/uut/data_ram0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem0" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem1" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem2" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem3" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+set_property target_simulator ModelSim [current_project]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=24600)
+set_property target_simulator XSim [current_project]
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 15:19:46 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1229.703 ; gain = 0.000
+add_wave {{/openmips_min_sopc_tb/uut}} 
+add_wave {{/openmips_min_sopc_tb/uut/sccpu}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+add_wave {{/openmips_min_sopc_tb/uut/inst_rom0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/inst_rom0/inst_mem" to the wave window because it has 2097120 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+add_wave {{/openmips_min_sopc_tb/uut/data_ram0}} 
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem0" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem1" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem2" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/openmips_min_sopc_tb/uut/data_ram0/data_mem3" to the wave window because it has 262136 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 16:06:07 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1316.145 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-XSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.ip_user_files/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/HILO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_board
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/PIL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/LLbit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ef5bc07a20ba4954b63e8bfcbf9795b4 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.HILO
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.LLbit
+Compiling module xil_defaultlib.CP0
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 17 16:10:25 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1316.145 ; gain = 0.000
+close [ open D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_post.v w ]
+add_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_post.v
+set_property top openmips_min_sopc_post [current_fileset]
+set_property -dict [list CONFIG.coefficient_file {D:/desktop/MIPS_CPU/CPU54.srcs/coe/mips_54_mars_simulate_student.coe}] [get_ips imem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/desktop/MIPS_CPU/CPU54.srcs/coe/mips_54_mars_simulate_student.coe' provided. It will be converted relative to IP Instance files '../../../coe/mips_54_mars_simulate_student.coe'
+generate_target all [get_files  D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/ip/imem/imem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'imem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'imem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'imem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'imem'...
+export_ip_user_files -of_objects [get_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/ip/imem/imem.xci] -no_script -force -quiet
+reset_run imem_synth_1
+launch_run -jobs 8 imem_synth_1
+[Sat Dec 17 16:34:32 2022] Launched imem_synth_1...
+Run output will be captured here: D:/desktop/MIPS_CPU/CPU54.runs/imem_synth_1/runme.log
+export_simulation -of_objects [get_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/ip/imem/imem.xci] -directory D:/desktop/MIPS_CPU/CPU54.ip_user_files/sim_scripts -ip_user_files_dir D:/desktop/MIPS_CPU/CPU54.ip_user_files -ipstatic_source_dir D:/desktop/MIPS_CPU/CPU54.ip_user_files/ipstatic -force -quiet
+set_property is_global_include true [get_files  D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_post.v]
+reset_run imem_synth_1
+set_property top openmips_min_sopc [current_fileset]
+remove_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_post.v
+file delete -force D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_post.v
+close [ open D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_post.v w ]
+add_files D:/desktop/MIPS_CPU/CPU54.srcs/sources_1/new/openmips_min_sopc_post.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_post_tb.v w ]
+add_files -fileset sim_1 D:/desktop/MIPS_CPU/CPU54.srcs/sim_1/new/openmips_min_sopc_post_tb.v
+set_property top openmips_min_sopc_post_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property -dict [list CONFIG.coefficient_file {D:/desktop/MIPS_CPU/CPU54.srcs/coe/mips_54_mars_simulate_student.coe}] [get_ips imem]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/desktop/MIPS_CPU/CPU54.srcs/coe/mips_54_mars_simulate_student.coe' provided. It will be converted relative to IP Instance files '../../../coe/mips_54_mars_simulate_student.coe'
+set_property target_simulator ModelSim [current_project]
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/openmips_min_sopc_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_post_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_post_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=29784)
+set_property top openmips_min_sopc_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/openmips_min_sopc_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=32712)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=32836)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=33344)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=19060)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=24060)
+set_property top openmips_min_sopc_post_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/wlfthma0dy
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_post_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_post_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=28732)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_post_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_post_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=23964)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_post_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_post_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=26484)
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_post_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_post_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=33348)
+set_property top openmips_min_sopc_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation -install_path D:/digital_logic/modelsim_10.4c/_modelsim/win32
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/vsim.wlf
+WARNING: [Vivado 12-3661] Failed to remove file:D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/xelab.pb
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/digital_logic/modelsim_10.4c/_modelsim/win32/vsim.exe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/digital_logic/modelsim_10.4c/_modelsim/vivado_lib/modelsim.ini' copied to run dir:'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+INFO: [USF-ModelSim-40] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/mips_54_mars_simulate_student.coe'
+INFO: [USF-ModelSim-25] Exported 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav/eggTest.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-110] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-ModelSim-111] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Reading D:/digital_logic/modelsim_10.4c/_modelsim/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# do {openmips_min_sopc_tb_compile.do} 
+# Modifying modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module imem
+# -- Compiling module regfile
+# -- Compiling module PC
+# -- Compiling module MEM_WB
+# -- Compiling module MEM
+# -- Compiling module IF_ID
+# -- Compiling module ID_EX
+# -- Compiling module ID
+# -- Compiling module HILO
+# -- Compiling module EX_MEM
+# -- Compiling module EX
+# -- Compiling module DIV
+# -- Compiling module CTRL
+# -- Compiling module CP0
+# -- Compiling module openmips
+# -- Compiling module inst_rom
+# -- Compiling module data_ram
+# -- Compiling module openmips_min_sopc
+# -- Compiling module seg7x16
+# -- Compiling module openmips_min_sopc_board
+# -- Compiling module PIL
+# -- Compiling module LLbit
+# -- Compiling module wishbone_bus_if
+# -- Compiling module openmips_min_sopc_post
+# -- Compiling module openmips_min_sopc_tb
+# -- Compiling module openmips_min_sopc_post_tb
+# 
+# Top level modules:
+# 	openmips_min_sopc_board
+# 	openmips_min_sopc_tb
+# 	openmips_min_sopc_post_tb
+# Model Technology ModelSim SE vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/desktop/MIPS_CPU/CPU54.sim/sim_1/behav'
+Program launched (PID=30424)
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 17 21:19:27 2022...

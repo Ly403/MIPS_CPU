@@ -24,12 +24,13 @@
 module openmips(
     input rst,
     input clk,
-    //input [`__regfile__data__bus__]rom_data_i,
+    input stallreq_from_if,
+    input [`__regfile__data__bus__]rom_data_i,
 
     input [5:0] int,
 
-    //output wire[`__regfile__data__bus__] rom_addr_o,
-    //output wire rom_ce_o,
+    output wire[`__regfile__data__bus__] rom_addr_o,
+    output wire rom_ce_o,
     
     //input [`__regfile__data__bus__] i_ram_data,
     
@@ -39,14 +40,14 @@ module openmips(
     //output wire [3:0] o_ram_sel,
     //output wire o_ram_ce,
     
-    input     [`__regfile__data__bus__] iwishbone_data_i,
+/*    input     [`__regfile__data__bus__] iwishbone_data_i,
     input                               iwishbone_ack_i,
     output wire[`__regfile__data__bus__]iwishbone_addr_o,
     output wire[`__regfile__data__bus__]iwishbone_data_o,
     output wire                         iwishbone_we_o,
     output wire[3:0]                    iwishbone_sel_o,
     output wire                         iwishbone_stb_o,
-    output wire                         iwishbone_cyc_o,
+    output wire                         iwishbone_cyc_o,*/
     
     input     [`__regfile__data__bus__] dwishbone_data_i,
     input                               dwishbone_ack_i,
@@ -67,7 +68,7 @@ module openmips(
     wire [`__inst__address__bus__] _id_pc;
     wire [`__inst__data__bus__] _id_inst;
 
-	wire rom_ce_o;
+	// wire rom_ce_o;
 
 	wire[31:0] o_ram_addr;
 	wire o_ram_we;
@@ -230,7 +231,7 @@ module openmips(
     wire [5:0]stall;
     wire stall_req_from_id;
     wire stall_req_from_ex;
-    wire stallreq_from_if;
+    //wire stallreq_from_if;
     wire stallreq_from_mem;
     
     wire LLbit_o;
@@ -266,7 +267,7 @@ module openmips(
     );
 
     //指令寄存器的输入地址就是pc地址
-    //assign rom_addr_o = pc;
+    assign rom_addr_o = pc;
 
     IF_ID if_id0(
         .clk(clk),
@@ -274,7 +275,7 @@ module openmips(
         .stall(stall),
         .flush(flush),
         .if_pc(pc),
-        .if_inst(inst),
+        .if_inst(rom_data_i),
         .id_pc(_id_pc),
         .id_inst(_id_inst)
     );
@@ -708,7 +709,7 @@ module openmips(
         .stallreq(stallreq_from_mem)	       
     );
 
-    wishbone_bus_if iwishbone_bus_if(
+/*    wishbone_bus_if iwishbone_bus_if(
         .clk(clk),
         .rst(rst),
         
@@ -733,5 +734,5 @@ module openmips(
 
         .stallreq(stallreq_from_if)         
     );
-
+*/
 endmodule

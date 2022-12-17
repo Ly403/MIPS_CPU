@@ -1,0 +1,142 @@
+# //  ModelSim SE 10.1c Jul 27 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {openmips_min_sopc_post_tb_simulate.do} 
+# vsim -L unisims_ver -L unimacro_ver -L secureip -L dist_mem_gen_v8_0_10 -L xil_defaultlib -lib xil_defaultlib -voptargs=\"+acc\" xil_defaultlib.openmips_min_sopc_post_tb xil_defaultlib.glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "DIV(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "wishbone_bus_if(fast)".
+# 
+# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips.v(685): (vopt-2685) [TFMPC] - Too few port connections for 'CP0_0'.  Expected 20, found 19.
+# 
+# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips.v(685): (vopt-2718) [TFMPC] - Missing connection for port 'o_badVAddr'.
+# 
+# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips_min_sopc_post.v(62): (vopt-2685) [TFMPC] - Too few port connections for 'sccpu'.  Expected 16, found 15.
+# 
+# ** Warning: ../../../CPU54.srcs/sources_1/new/openmips_min_sopc_post.v(62): (vopt-2718) [TFMPC] - Missing connection for port 'stallreq_from_if'.
+# 
+# Loading work.openmips_min_sopc_post_tb(fast)
+# Loading work.openmips_min_sopc_post(fast)
+# Loading work.openmips(fast)
+# Loading work.PC(fast)
+# Loading work.IF_ID(fast)
+# Loading work.ID(fast)
+# Loading work.regfile(fast)
+# Loading work.ID_EX(fast)
+# Loading work.EX(fast)
+# Loading work.EX_MEM(fast)
+# Loading work.MEM(fast)
+# Loading work.MEM_WB(fast)
+# Loading work.HILO(fast)
+# Loading work.CTRL(fast)
+# Loading work.DIV(fast)
+# Loading work.LLbit(fast)
+# Loading work.CP0(fast)
+# Loading work.wishbone_bus_if(fast)
+# Loading work.imem(fast)
+# Loading dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(fast)
+# Loading work.data_ram(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 100 of file "imem.mif". Expected 2048, found 99.    : ../../../CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /openmips_min_sopc_post_tb/uut/imem0/inst
+# Causality operation skipped due to absense of debug database file
+add wave -position insertpoint sim:/openmips_min_sopc_post_tb/uut/*
+restart -f
+# Loading work.openmips_min_sopc_post_tb(fast)
+# Loading work.openmips_min_sopc_post(fast)
+# Loading work.openmips(fast)
+# Loading work.PC(fast)
+# Loading work.IF_ID(fast)
+# Loading work.ID(fast)
+# Loading work.regfile(fast)
+# Loading work.ID_EX(fast)
+# Loading work.EX(fast)
+# Loading work.EX_MEM(fast)
+# Loading work.MEM(fast)
+# Loading work.MEM_WB(fast)
+# Loading work.HILO(fast)
+# Loading work.CTRL(fast)
+# Loading work.DIV(fast)
+# Loading work.LLbit(fast)
+# Loading work.CP0(fast)
+# Loading work.wishbone_bus_if(fast)
+# Loading work.imem(fast)
+# Loading dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(fast)
+# Loading work.data_ram(fast)
+# Loading work.glbl(fast)
+run
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 100 of file "imem.mif". Expected 2048, found 99.    : ../../../CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /openmips_min_sopc_post_tb/uut/imem0/inst
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
