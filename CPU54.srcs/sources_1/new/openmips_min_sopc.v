@@ -44,15 +44,25 @@ module openmips_min_sopc(
         .clk(clk),
         .rst(rst),
         .int(int),
-        .rom_addr_o(inst_addr),
-        .rom_data_i(inst),
-        .rom_ce_o(rom_ce),
-        .i_ram_data(i_ram_data),
-        .o_ram_ce(ram_ce),
-        .o_ram_sel(ram_sel),
-        .o_ram_we(ram_we),
-        .o_ram_data(ram_data),
-        .o_ram_addr(ram_addr),
+
+        .iwishbone_data_i(inst),
+        .iwishbone_ack_i(1'b1),
+        .iwishbone_addr_o(inst_addr),
+        .iwishbone_data_o(),
+        .iwishbone_we_o(),
+        .iwishbone_sel_o(),
+        .iwishbone_stb_o(rom_ce),
+        .iwishbone_cyc_o(),
+        
+        .dwishbone_data_i(i_ram_data),
+        .dwishbone_ack_i(1'b1),
+        .dwishbone_addr_o(ram_addr),
+        .dwishbone_data_o(ram_data),
+        .dwishbone_we_o(ram_we),
+        .dwishbone_sel_o(ram_sel),
+        .dwishbone_stb_o(ram_ce),
+        .dwishbone_cyc_o(),
+
         .timer_int(timer_int)
     );
     
@@ -62,14 +72,14 @@ module openmips_min_sopc(
     );*/
     //如要前仿真，放开下面的注释
     inst_rom inst_rom0(
-        .ce(rom_ce),
+        .ce(1'b1),
         .addr(inst_addr),
         .inst(inst)
     );
     
     data_ram data_ram0(
         .clk(clk),
-        .ce(ram_ce),
+        .ce(1'b1),
         .we(ram_we),
         .addr(ram_addr),
         .sel(ram_sel),

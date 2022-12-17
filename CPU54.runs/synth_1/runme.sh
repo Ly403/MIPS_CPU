@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log openmips_min_sopc_board.vds -m64 -mode batch -messageDb vivado.pb -notrace -source openmips_min_sopc_board.tcl
+EAStep vivado -log openmips_min_sopc.vds -m64 -mode batch -messageDb vivado.pb -notrace -source openmips_min_sopc.tcl

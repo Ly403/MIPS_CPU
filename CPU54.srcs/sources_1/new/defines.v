@@ -340,4 +340,8 @@
 `define TrapNotAssert 1'b0
 `define BreakAssert 1'b1
 `define BreakNotAssert 1'b0
+
+`define WB_IDLE 2'b00 //总线等待
+`define WB_BUSY 2'B01 //总线忙
+`define WB_WAIT_FOR_STALL 2'b11 //等到暂停结束
 `endif

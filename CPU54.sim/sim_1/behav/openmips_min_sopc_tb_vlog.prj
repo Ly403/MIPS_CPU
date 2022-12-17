@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog dist_mem_gen_v8_0_10  "../../../CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.ip_user_files/ip/imem/sim/imem.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/defines.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/regfile.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/pc.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/MEM_WB.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/MEM.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/IF_ID.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/ID_EX.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/ID.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/HILO.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/EX_MEM.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/EX.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/DIV.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/CTRL.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/CP0.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/openmips.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/inst_rom.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/data_ram.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/openmips_min_sopc.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/seg7x16.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/openmips_min_sopc_board.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/PIL.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/LLbit.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/wishbone_bus_if.v" -i "../../../"
+verilog xil_defaultlib  "../../../CPU54.srcs/sim_1/new/openmips_min_sopc_tb.v" -i "../../../"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

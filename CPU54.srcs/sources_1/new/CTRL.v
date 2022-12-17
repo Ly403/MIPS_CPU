@@ -28,6 +28,9 @@ module CTRL(
     //MEMÄ£¿éµÄÊäÈë
     input [31:0] excepttype,
     input [`__regfile__data__bus__] cp0_epc,
+    
+    input  stallreq_from_if,
+    input stallreq_from_mem,
 
     output reg [`__regfile__data__bus__] new_pc,
     output reg flush,
@@ -69,6 +72,10 @@ module CTRL(
             end
             endcase
         end
+        else if(stallreq_from_mem == `STOP) begin
+            stall <= 6'b011111;
+            flush <= 1'b0;           
+        end
         else if(ex_stall == `STOP) begin
             stall <= 6'b001111;
             flush <= 1'b0;
@@ -76,6 +83,10 @@ module CTRL(
         else if(id_stall == `STOP)begin
             stall <= 6'b000111;
             flush <= 1'b0;
+        end
+        else if(stallreq_from_if == `STOP) begin
+            stall <= 6'b000111;
+            flush <= 1'b0;           
         end
         else begin
             stall <= 6'b000000;

@@ -24,27 +24,57 @@
 module openmips(
     input rst,
     input clk,
-    input [`__regfile__data__bus__]rom_data_i,
+    //input [`__regfile__data__bus__]rom_data_i,
 
     input [5:0] int,
 
-    output wire[`__regfile__data__bus__] rom_addr_o,
-    output wire rom_ce_o,
+    //output wire[`__regfile__data__bus__] rom_addr_o,
+    //output wire rom_ce_o,
     
-    input [`__regfile__data__bus__] i_ram_data,
+    //input [`__regfile__data__bus__] i_ram_data,
     
-    output wire [`__regfile__data__bus__] o_ram_addr,
-    output wire [`__regfile__data__bus__] o_ram_data,
-    output wire o_ram_we,
-    output wire [3:0] o_ram_sel,
-    output wire o_ram_ce,
+    //output wire [`__regfile__data__bus__] o_ram_addr,
+    //output wire [`__regfile__data__bus__] o_ram_data,
+    //output wire o_ram_we,
+    //output wire [3:0] o_ram_sel,
+    //output wire o_ram_ce,
+    
+    input     [`__regfile__data__bus__] iwishbone_data_i,
+    input                               iwishbone_ack_i,
+    output wire[`__regfile__data__bus__]iwishbone_addr_o,
+    output wire[`__regfile__data__bus__]iwishbone_data_o,
+    output wire                         iwishbone_we_o,
+    output wire[3:0]                    iwishbone_sel_o,
+    output wire                         iwishbone_stb_o,
+    output wire                         iwishbone_cyc_o,
+    
+    input     [`__regfile__data__bus__] dwishbone_data_i,
+    input                               dwishbone_ack_i,
+    output wire[`__regfile__data__bus__]dwishbone_addr_o,
+    output wire[`__regfile__data__bus__]dwishbone_data_o,
+    output wire                         dwishbone_we_o,
+    output wire[3:0]                    dwishbone_sel_o,
+    output wire                         dwishbone_stb_o,
+    output wire                         dwishbone_cyc_o,
+    
     output wire timer_int
     );
 
+
     //连接IF_ID模块与ID模块的线
     wire [`__inst__address__bus__] pc;
+    wire [`__inst__data__bus__] inst;
     wire [`__inst__address__bus__] _id_pc;
     wire [`__inst__data__bus__] _id_inst;
+
+	wire rom_ce_o;
+
+	wire[31:0] o_ram_addr;
+	wire o_ram_we;
+    wire[3:0] o_ram_sel;
+	wire[`__regfile__data__bus__] o_ram_data;
+	wire o_ram_ce;
+    wire[`__regfile__data__bus__] i_ram_data;
 
     //连接ID和ID_EX
     wire [`ALUOP] id_aluop_;
@@ -200,7 +230,9 @@ module openmips(
     wire [5:0]stall;
     wire stall_req_from_id;
     wire stall_req_from_ex;
-
+    wire stallreq_from_if;
+    wire stallreq_from_mem;
+    
     wire LLbit_o;
     //wire LLbit_o;
 
@@ -234,7 +266,7 @@ module openmips(
     );
 
     //指令寄存器的输入地址就是pc地址
-    assign rom_addr_o = pc;
+    //assign rom_addr_o = pc;
 
     IF_ID if_id0(
         .clk(clk),
@@ -242,7 +274,7 @@ module openmips(
         .stall(stall),
         .flush(flush),
         .if_pc(pc),
-        .if_inst(rom_data_i),
+        .if_inst(inst),
         .id_pc(_id_pc),
         .id_inst(_id_inst)
     );
@@ -595,7 +627,10 @@ module openmips(
         .flush(flush),
         .new_pc(new_pc),
         .cp0_epc(latest_epc),
-        .excepttype(mem_excepttype_)
+        .excepttype(mem_excepttype_),
+
+		.stallreq_from_if(stallreq_from_if),
+		.stallreq_from_mem(stallreq_from_mem)
     );
 
     DIV DIV0(
@@ -647,5 +682,56 @@ module openmips(
 		
 		.o_timer_int(timer_int)  			
 	);
+	
+	wishbone_bus_if dwishbone_bus_if(
+        .clk(clk),
+        .rst(rst),
+        .stall(stall),
+        .flush(flush),
+
+        .cpu_ce(o_ram_ce),
+        .cpu_data(o_ram_data),
+        .cpu_addr(o_ram_addr),
+        .cpu_we(o_ram_we),
+        .cpu_sel(o_ram_sel),
+        .o_cpu_data(i_ram_data),
+
+        .wishbone_data(dwishbone_data_i),
+        .wishbone_ack(dwishbone_ack_i),
+        .o_wishbone_addr(dwishbone_addr_o),
+        .o_wishbone_data(dwishbone_data_o),
+        .o_wishbone_we(dwishbone_we_o),
+        .o_wishbone_sel(dwishbone_sel_o),
+        .o_wishbone_stb(dwishbone_stb_o),
+        .o_wishbone_cyc(dwishbone_cyc_o),
+
+        .stallreq(stallreq_from_mem)	       
+    );
+
+    wishbone_bus_if iwishbone_bus_if(
+        .clk(clk),
+        .rst(rst),
+        
+        .stall(stall),
+        .flush(flush),
+        
+        .cpu_ce(rom_ce_o),
+        .cpu_data(32'h00000000),
+        .cpu_addr(pc),
+        .cpu_we(1'b0),
+        .cpu_sel(4'b1111),
+        .o_cpu_data(inst),
+
+        .wishbone_data(iwishbone_data_i),
+        .wishbone_ack(iwishbone_ack_i),
+        .o_wishbone_addr(iwishbone_addr_o),
+        .o_wishbone_data(iwishbone_data_o),
+        .o_wishbone_we(iwishbone_we_o),
+        .o_wishbone_sel(iwishbone_sel_o),
+        .o_wishbone_stb(iwishbone_stb_o),
+        .o_wishbone_cyc(iwishbone_cyc_o),
+
+        .stallreq(stallreq_from_if)         
+    );
 
 endmodule

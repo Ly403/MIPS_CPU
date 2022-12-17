@@ -1,0 +1,80 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 18580
+
+Current time: 	12/17/22 12:29:41 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	D:/Vivado/2016.2/tps/win64/jre
+
+User name: 	86183
+User home directory: C:/Users/86183
+User working directory: D:/desktop/MIPS_CPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI Base root directory: D:/Vivado
+RDI Data directory: D:/Vivado/2016.2/data
+RDI Bin directory: D:/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/86183/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/86183/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	218 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 579 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 34 MB (+33350kb) [00:00:04]
+// [Engine Memory]: 465 MB (+335616kb) [00:00:04]
+// Opening Vivado Project: D:\desktop\MIPS_CPU\CPU54.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: open_project D:/desktop/MIPS_CPU/CPU54.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+14381kb) [00:00:06]
+// [Engine Memory]: 542 MB (+56449kb) [00:00:06]
+// [GUI Memory]: 55 MB (+2699kb) [00:00:06]
+// [Engine Memory]: 573 MB (+3993kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project D:/desktop/MIPS_CPU/CPU54.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: CPU54; location: D:/desktop/MIPS_CPU; part: xc7a100tcsg324-1
+// [GUI Memory]: 58 MB (+827kb) [00:00:08]
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// [Engine Memory]: 619 MB (+18252kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 625 MB. GUI used memory: 35 MB. Current time: 12/17/22 12:29:42 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
